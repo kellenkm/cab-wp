@@ -208,6 +208,30 @@ usort($locations, 'keySort');
           </div>
         </div>
       </section>
+      <section class='map'>
+      	<div class="map-col">
+      		<img src="<?php bloginfo('template_directory'); ?>/images/map-img.png" />
+      	</div>
+      	<div class="map-col">
+        <div class='container'>
+          <div class='inner map-list'>
+            <h2 class='section-header'>Map</h2>
+            <?php $count = 1 ?>
+			<?php foreach ($locations as $l): ?>
+				<div class="single-location<?php if ($count % 2 != 0): echo ' left'; else: echo ' right'; endif ?>" id="location-<?php echo $l['ID'] ?>">
+					<header>
+						<span class="alpha"><a href="<?php echo get_field('location_google_map_url', $l['ID']) ?>" target="_BLANK"><?php echo $l['post_title'] ?></a></span>
+					</header>
+					<footer>
+						<p><?php echo get_field('location_street_address', $l['ID']) ?></p>
+					</footer>
+				</div>
+				<?php $count++ ?>
+			<?php endforeach; ?>
+          </div>
+        </div>
+    </div>
+      </section>
 
 		<div id="programming" class="section">
 			<h2>Programming</h2>
@@ -263,32 +287,6 @@ usort($locations, 'keySort');
 						<?php endforeach; ?>
 					</tbody>
 				</table>
-			</div>
-		</div>
-
-		<div id="locations" class="section">
-			<h2>Locations</h2>
-			<div class="main">
-				<div class="location-full-map">
-					<img src="<?php echo get_bloginfo('template_directory') ?>/images/locations/all_locations_map.png" />
-				</div>
-				<?php $count = 1 ?>
-				<?php foreach ($locations as $l): ?>
-					<div class="single-location<?php if ($count % 2 != 0): echo ' left'; else: echo ' right'; endif ?>" style="background-color: <?php echo get_field('location_hex_value', $l['ID']) ?>" id="location-<?php echo $l['ID'] ?>">
-						<header>
-							<img src="<?php echo get_field('location_key_image_transparent', $l['ID']) ?>" />
-							<span><a href="<?php echo get_field('location_google_map_url', $l['ID']) ?>" target="_BLANK"><?php echo $l['post_title'] ?></a></span>
-						</header>
-						<div class="location-map">
-							<!-- <a href="<?php echo get_field('location_google_map_url', $l['ID']) ?>" target="_BLANK"><img src="<?php echo get_field('location_image', $l['ID']) ?>" /></a> -->
-						</div>
-						<footer>
-							<p><?php echo get_field('location_street_address', $l['ID']) ?></p>
-							<p><a class="location-url" href="<?php echo get_field('location_website', $l['ID']) ?>" target="_BLANK"><?php echo str_replace(array('http://', 'https://', 'www.'), '', get_field('location_website', $l['ID'])) ?></a></p>
-						</footer>
-					</div>
-					<?php $count++ ?>
-				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>

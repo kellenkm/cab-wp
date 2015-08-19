@@ -1084,6 +1084,15 @@ section.map {
     /* line 89, /Users/bucky/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     section.map .inner:last-child {
       margin-right: 0; }
+      section.map .map-col {
+      	width: 49%;
+      	display: inline-block;
+      	height: 100%;
+      	vertical-align: top;
+      }
+      section.map .map-list {
+      	text-align: left;
+      }
 
 /* line 169, /Users/bucky/Sites/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
 footer.footer {
