@@ -36,4 +36,4 @@
 
 <body <?php body_class(); ?>>
 <div class="content">
-    <section class="cover"></section>
+    <section class="cover" data-top="background-position: 50% 0%;" data-top-bottom="background-position: 50% -15%;"></section>

@@ -154,7 +154,7 @@ usort($locations, 'keySort');
 		          </div>
 		        </div>
 		      </section>
-		      <section class="spacer"></section>
+		      <section class="spacer" data-100-bottom-top="background-position: 50% -50%;" data-top-bottom="background-position: 50% -65%;"></section>
 								
 				<?php endif; ?>
 				<?php if (!empty($exhibitors) && false): ?>
@@ -201,7 +201,7 @@ usort($locations, 'keySort');
           </div>
         </div>
       </section>
-      <section class="spacer spacer-2"></section>
+      <section class="spacer spacer-2" data-100-bottom-top="background-position: 50% -20%;" data-top-bottom="background-position: 50% -35%;"></section>
       <section class="section-page program">
       	<div class="container">
       		<div class="inner">
@@ -284,7 +284,7 @@ usort($locations, 'keySort');
 			endforeach; ?>
 		<?php endforeach; ?>
       </section>
-      <section class="spacer spacer-3"></section>
+      <section class="spacer spacer-3" data-100-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 85%;"></section>
       <section class="section-page locations">
         <aside class="location-map">
           <div class="map"></div>
