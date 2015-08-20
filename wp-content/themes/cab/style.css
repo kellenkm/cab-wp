@@ -878,7 +878,7 @@ footer.footer {
 
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_cover.scss */
 section.cover {
-  background-image: url(/assets/images/bg-cover.jpg);
+  background-image: url(images/bg-cover.jpg);
   background-color: #fff;
   background-size: cover;
   background-position: 50% top;
@@ -905,7 +905,7 @@ section.cover {
 
 /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_cover.scss */
 .spacer {
-  background-image: url(/assets/images/bg-cover.jpg);
+  background-image: url(images/bg-cover.jpg);
   background-color: #fff;
   background-size: cover;
   background-position: 50% -50%;
@@ -1290,17 +1290,3 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .section-page.locations .location-directory:last-child {
           margin-right: 0; } }
-
-/* line 34, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
-section.map .map-col {
-  width: 49%;
-  display: inline-block;
-  height: 100%;
-  vertical-align: top; }
-  @media screen and (min-width: 64em) {
-    /* line 34, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
-    section.map .map-col {
-      width: 100%; } }
-/* line 43, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
-section.map .map-list {
-  text-align: left; }

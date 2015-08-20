@@ -126,7 +126,7 @@ usort($locations, 'keySort');
             	<?php foreach($featured as $f): ?>
 							<a data-toggle="modal" data-target="#modal-featured-<?php echo $f['ID'] ?>" id="featured-<?php echo $f['ID'] ?>"><?php echo $f['post_title'] ?></a>
 							<!-- Modal -->
-							<div class="modal fade" id="modal-featured-<?php echo $f['ID'] ?>" tabindex="-1" role="dialog" aria-labelledby="modal-featured-<?php echo $f['ID'] ?>-label" aria-hidden="true">
+							<div class="modal fade" style="display:none;" id="modal-featured-<?php echo $f['ID'] ?>" tabindex="-1" role="dialog" aria-labelledby="modal-featured-<?php echo $f['ID'] ?>-label" aria-hidden="true">
 								<div class="modal-dialog">
 									<div class="modal-content">
 										<div class="modal-header">
