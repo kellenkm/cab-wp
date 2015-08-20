@@ -287,7 +287,7 @@ usort($locations, 'keySort');
       <section class="spacer spacer-3"></section>
       <section class="section-page locations">
         <aside class="location-map">
-          <div class="map"><img src="<?php bloginfo('template_directory'); ?>/images/map-img.png" /></div>
+          <div class="map"></div>
         </aside>
         <div class="location-directory">
           <ul class="location-list">
