@@ -117,15 +117,8 @@ usort($locations, 'keySort');
 ?>
 
 
-<div id="year-wrapper">
-	<?php get_sidebar(); ?>
-	
-	<div id="year-content">
-		<div id="exhibitors" class="section">
-			<h2>An annual festival of comics and cartoon art</h2>
-			<div class="main">
-				<?php if (!empty($featured)): ?>
-				<section class="section-page marquee">
+		<?php if (!empty($featured)): ?>
+		<section class="section-page marquee">
         <div class="container">
           <div class="inner">
             <h2 class="section-header">Featuring</h2>
@@ -210,89 +203,105 @@ usort($locations, 'keySort');
         </div>
       </section>
       <section class="spacer spacer-2"></section>
-      <section class="section-page program"></section>
-      <section class='map'>
-      	<div class="map-col">
-      		<img src="<?php bloginfo('template_directory'); ?>/images/map-img.png" />
-      	</div>
-      	<div class="map-col">
-        <div class='container'>
-          <div class='inner map-list'>
-            <h2 class='section-header'>Map</h2>
-            <?php $count = 1 ?>
-			<?php foreach ($locations as $l): ?>
-				<div class="single-location<?php if ($count % 2 != 0): echo ' left'; else: echo ' right'; endif ?>" id="location-<?php echo $l['ID'] ?>">
-					<header>
-						<span class="alpha"><a href="<?php echo get_field('location_google_map_url', $l['ID']) ?>" target="_BLANK"><?php echo $l['post_title'] ?></a></span>
-					</header>
-					<footer>
-						<p><?php echo get_field('location_street_address', $l['ID']) ?></p>
-					</footer>
-				</div>
-				<?php $count++ ?>
-			<?php endforeach; ?>
+      <section class="section-page program">
+      	<div class="container">
+      		<div class="inner">
+            <h2 class="section-header">Programming</h2>
+            <header class="program-header">
+              <div class="date">
+                <div class="date-day">Saturday</div>
+                <div class="date-month">Nov 8</div>
+              </div>
+              <div class="place">
+                <div class="place-title">Our Lady of Mt. Carmel Church</div>
+                <div class="place-sub">Brooklyn</div>
+              </div>
+            </header>
+            <article class="program-article">
+              <div class="program-article-content">
+                <div class="program-article-time">All Day</div>
+                <h1>Book Sales</h1>
+              </div>
+            </article>
           </div>
-        </div>
-    </div>
-      </section>
-
-		<div id="programming" class="section">
-			<h2>Programming</h2>
-			<div class="main">
-				<header>
-					<h1>Sat Nov 8: Our Lady of Mt. Carmel Church, <span>Brooklyn</span></h1>
-				</header>
-				<table>
-					<thead>
-						<tr>
-							<td>Time</td>
-							<td>Event</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="bigger">All Day</td>
-							<td>
-								<h4>Book sales</h4>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-			<div class="main">
-				<header>
-					<h1>Sun Nov 9: Wythe Hotel, <span>Williamsburg</span></h1>
-					<h5>Advance tickets are sold out, but some standing room entry will be available<br />on the day of the event on a first-come-first-served basis.</h5>
-				</header>
-				<table>
-					<thead>
-						<tr>
-							<td>Time</td>
-							<td>Event</td>
-						</tr>
-					</thead>
-					<tbody>
-						<?php foreach ($programming as $d): ?>
-							<?php foreach ($d as $p): ?>
-								<pre><?php //print_r($p) ?></pre>
-								<tr>
-									<td class="bigger"><?php echo $p['event_time'] ?></td>
-									<td>
-										<h4><?php echo $p['post_title'] ?></h4>
-										<p><?php echo get_post_field('post_content', $p['ID']) ?></p>
-										<?php if ($p['ticket_link']): ?>
-											<p><a class="get-tickets" href="<?php echo $p['ticket_link'] ?>" target="_BLANK">View Event Details</a></p>
-										<?php endif; ?>
-									</td>
-								</tr>
-							<?php endforeach; ?>
-						<?php endforeach; ?>
-					</tbody>
-				</table>
-			</div>
+			
 		</div>
 	</div>
-</div>
+      </section>
+			<section class="section-page program bg-vibrant">
+        <div class="container">
+          <div class="inner">
+            <header class="program-header">
+              <div class="date">
+                <div class="date-day">Sunday</div>
+                <div class="date-month">Nov 8</div>
+              </div>
+              <div class="place">
+                <div class="place-title">Our Lady of Mt. Carmel Church</div>
+                <div class="place-sub">Brooklyn</div>
+              </div>
+            </header>
+            
+            <?php foreach ($programming as $d): ?>
+			<?php foreach ($d as $p): ?>
+				<article class="program-article">
+	              <div class="program-article-content">
+	                <div class="program-article-time"><?php echo $p['event_time'] ?></div>
+	                <h1><?php echo $p['post_title'] ?></h1>
+	                <p><?php echo get_post_field('post_content', $p['ID']) ?></p>
+	                <?php if ($p['ticket_link']): ?>
+							<p><a class="get-tickets" href="<?php echo $p['ticket_link'] ?>" target="_BLANK">View Event Details</a></p>
+						<?php endif; ?>
+	              </div>
+	            </article>
+			<?php 
 
+			break;
+			endforeach; ?>
+		<?php endforeach; ?>
+          </div>
+        </div>
+            <?php 
+            $index = 0;
+            foreach ($programming as $d): ?>
+			<?php foreach ($d as $p): 
+				$index++; 
+				if($index == 1) continue; ?>
+				<div class="container">
+          <div class="inner">
+            <article class="program-article align-right">
+              <div class="program-article-content">
+                <div class="program-article-time"><?php echo $p['event_time'] ?></div>
+                <h1><?php echo $p['post_title'] ?></h1>
+                <p><?php echo get_post_field('post_content', $p['ID']) ?></p>
+                <?php if ($p['ticket_link']): ?>
+					<p><a class="get-tickets" href="<?php echo $p['ticket_link'] ?>" target="_BLANK">View Event Details</a></p>
+				<?php endif; ?>
+              </div>
+            </article>
+          </div>
+        </div>
+			<?php 
+			endforeach; ?>
+		<?php endforeach; ?>
+      </section>
+      <section class="spacer spacer-3"></section>
+      <section class="section-page locations">
+        <aside class="location-map">
+          <div class="map"><img src="<?php bloginfo('template_directory'); ?>/images/map-img.png" /></div>
+        </aside>
+        <div class="location-directory">
+          <ul class="location-list">
+          	<?php $count = 1 ?>
+			<?php foreach ($locations as $l): ?>
+				<li>
+	              <h4><a href="<?php echo get_field('location_google_map_url', $l['ID']) ?>" target="_BLANK"><?php echo $l['post_title'] ?></a></h4>
+	              <p><?php echo get_field('location_street_address', $l['ID']) ?></p>
+	            </li>
+				<?php $count++ ?>
+			<?php endforeach; ?>
+          </ul>
+        </div>
+      </section>
+    
 <?php get_footer(); ?>

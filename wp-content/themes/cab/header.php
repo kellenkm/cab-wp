@@ -36,18 +36,5 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<?php if ( get_header_image() ) : ?>
-	<div id="site-header">
-		
-	</div>
-	<?php endif; ?>
-
-	<div class='parallax-image-wrapper parallax-image-wrapper-100' data-bottom-top='transform:translate3d(0px, 200%, 0px)' data-top-bottom='transform:translate3d(0px, 0%, 0px)'>
-      <div class='parallax-image parallax-image-100' data-bottom-top='transform: translate3d(0px, -80%, 0px);' data-top-bottom='transform: translate3d(0px, 80%, 0px);' style='background-image:url(<?php bloginfo('template_directory'); ?>/images/bg-cover.jpg)'></div>
-    </div>
-    <section class="cover">
-        <div class="gap gap-100" style="background-image:url(<?php bloginfo('template_directory'); ?>/images/bg-cover.jpg)"></div>
-      </section>
-
-	<div id="main" class="site-main">
+<div class="content">
+    <section class="cover"></section>

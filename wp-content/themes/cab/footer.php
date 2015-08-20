@@ -10,13 +10,11 @@
  */
 ?>
 
-		</div><!-- #main -->
-
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="main">
-				<div class="footer-section">
-					<h4>Sponsored By:</h4>
-					<div class="footer-logos">
+		<footer class="footer">
+        <div class="container">
+          <div class="inner">
+            <h4 class="section-header">Sponsored by</h4>
+            <div class="footer-logos">
 						<p>
 							<a href="http://www.drawnandquarterly.com/" target="_BLANK"><img src="<?php echo get_bloginfo('template_directory') ?>/images/footer/drawnandquarterly.png" /></a>
 							<a href="http://www.lostartbooks.com/" target="_BLANK"><img src="<?php echo get_bloginfo('template_directory') ?>/images/footer/lostartbooks.png" /></a>
@@ -29,19 +27,10 @@
 							<a href="http://www.finland.org/public/default.aspx?nodeid=35840&contentlan=2&culture=en-US" target="_BLANK"><img src="<?php echo get_bloginfo('template_directory') ?>/images/footer/finland_consulate.png" /></a>
 						</p>
 					</div>
-				</div>
-				<div class="footer-section">
-					<h4>Presented By:</h4>
-					<div class="footer-logos" id="presented-by">
-						<a href="http://desertislandcomics.tumblr.com/" target="_BLANK"><img src="<?php echo get_bloginfo('template_directory') ?>/images/footer/desertislandlogo.png" /></a>
-					</div>
-				</div>
-				<div class="footer-section" id="exploding-pixel">
-					<a href="http://explodingpixel.com/" target="_BLANK"><img src="<?php echo get_bloginfo('template_directory') ?>/images/footer/explodingpixel.png" /></a>
-				</div>
-			</div>
-		</footer><!-- #colophon -->
-	</div><!-- #page -->
+          </div>
+        </div>
+      </footer>
+	</div><!-- .content -->
 
 	<?php wp_footer(); ?>
 
