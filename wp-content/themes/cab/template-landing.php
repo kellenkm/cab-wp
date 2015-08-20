@@ -179,8 +179,8 @@ usort($locations, 'keySort');
             <h2 class='section-header'>Events</h2>
             
             <?php $count = 1 ?>
-				<?php foreach ($events as $e): ?>
-				<article class='featured-article'>
+				<?php foreach ($events as $e): 
+				?><article class='featured-article'>
 	              <aside class='featured-article-meta'>
 	                <div class='date'>
 	                  <div class='date-day'><? echo date('D', strtotime(get_field('calendar_event_date', $e['ID']))); ?></div>
@@ -195,10 +195,9 @@ usort($locations, 'keySort');
 	                <h1><?php echo $e['post_title'] ?></h1>
 	                <p><?php echo get_post_field('post_content', $e['ID']) ?></p>
 	              </div>
-	            </article>
-					
-					<?php $count++ ?>
-				<?php endforeach; ?>
+	            </article><?php 
+	            $count++;
+	            endforeach; ?>
           </div>
         </div>
       </section>
