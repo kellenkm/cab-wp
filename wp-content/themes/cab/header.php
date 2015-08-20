@@ -27,6 +27,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>?v=12" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/js/bootstrap/css/bootstrap.min.css" />
+	<script src="http://use.typekit.net/qqk3xvv.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->

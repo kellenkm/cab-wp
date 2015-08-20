@@ -125,7 +125,7 @@ usort($locations, 'keySort');
 			<h2>An annual festival of comics and cartoon art</h2>
 			<div class="main">
 				<?php if (!empty($featured)): ?>
-				<section class="marquee">
+				<section class="section-page marquee">
         <div class="container">
           <div class="inner">
             <h2 class="section-header">Featuring</h2>
@@ -161,6 +161,7 @@ usort($locations, 'keySort');
 		          </div>
 		        </div>
 		      </section>
+		      <section class="spacer"></section>
 								
 				<?php endif; ?>
 				<?php if (!empty($exhibitors) && false): ?>
@@ -179,7 +180,7 @@ usort($locations, 'keySort');
 				<?php endif; ?>
 			</div>
 		</div>
-<section class='featured'>
+<section class='section-page featured'>
         <div class='container'>
           <div class='inner'>
             <h2 class='section-header'>Events</h2>
@@ -208,6 +209,8 @@ usort($locations, 'keySort');
           </div>
         </div>
       </section>
+      <section class="spacer spacer-2"></section>
+      <section class="section-page program"></section>
       <section class='map'>
       	<div class="map-col">
       		<img src="<?php bloginfo('template_directory'); ?>/images/map-img.png" />
