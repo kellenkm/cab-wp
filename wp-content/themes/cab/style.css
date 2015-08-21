@@ -1116,6 +1116,18 @@ section.cover {
           font-size: 1.75rem;
           line-height: 1.25; } }
 
+/* line 76, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+.modal {
+  font-family: "proxima-nova", sans-serif;
+  text-transform: none;
+  color: #333; }
+  /* line 80, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+  .modal a {
+    color: #477dca; }
+    /* line 82, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+    .modal a:hover {
+      color: #2c5999; }
+
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
 .section-page.program {
   background-color: #354872; }
