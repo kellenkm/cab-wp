@@ -10,7 +10,9 @@ $(document).ready(function() {
 	//     updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
 	// });
 	$(window).load(function() {
-		var s = skrollr.init();
+		var s = skrollr.init({
+			smoothScrolling: false
+		});
 	});
 	$('#show-all-exhibitors').click(function() {
 		// $(this).toggle();
