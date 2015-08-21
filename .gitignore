@@ -1,7 +1,5 @@
 .DS_Store
 wp-config.php
-wp-content/uploads/
 wp-admin/error_log
 googlec6e95d3c430c9109.html
-.htaccess
 error_log
