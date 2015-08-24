@@ -21,16 +21,9 @@ $(document).ready(function() {
 		        s = skrollr.init({
 		            smoothScrolling: false
 		        });
-        		$('.bg-vibrant .program-header').scrollToFixed( {
-			        marginTop: 0,
-			        limit: function() {
-			        	return $('.bg-vibrant').offset().top + $('.bg-vibrant').height() - $('.bg-vibrant .program-header').outerHeight() - offset
-			        }
-			    });
-		 
+        		
 		 
 		    } else {
-		    	offset = 10000;
 		    	if(s) {
 		    		s.destroy();
 		    	}
@@ -39,9 +32,15 @@ $(document).ready(function() {
 		 
 		}
 		function adjustWindow2() {
-		    if( $(window).width() >= 480)
+		    if( $(window).width() >= 480) {
 		    	offset = 0;
-		    else 
+		    	$('.bg-vibrant .program-header').scrollToFixed( {
+			        marginTop: 0,
+			        limit: function() {
+			        	return $('.bg-vibrant').offset().top + $('.bg-vibrant').height() - $('.bg-vibrant .program-header').outerHeight() - offset
+			        }
+			    });
+		    } else 
 		    	offset = -10000;
 		}
 		function initAdjustWindow() {
