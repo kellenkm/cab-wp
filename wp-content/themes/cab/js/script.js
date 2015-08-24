@@ -12,7 +12,7 @@ $(document).ready(function() {
 	$(window).load(function() {
 		$('.bg-vibrant .program-header').scrollToFixed( {
 	        marginTop: 0,
-	        limit: $('.bg-vibrant').offset().top + $('.bg-vibrant').height()
+	        limit: $('.bg-vibrant').offset().top + $('.bg-vibrant').height() - $('.bg-vibrant .program-header').outerHeight()
 	    });
 
 		function adjustWindow(){
