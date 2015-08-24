@@ -41,7 +41,7 @@ $(document).ready(function() {
 			        }
 			    });
 		    } else 
-		    	offset = -10000;
+		    	offset = 10000;
 		}
 		function initAdjustWindow() {
 		    return {
