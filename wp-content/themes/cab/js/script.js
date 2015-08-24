@@ -33,7 +33,7 @@ $(document).ready(function() {
 		}
 		function adjustWindow2() {
 		    if( $(window).width() >= 480) {
-		    	$('.bg-vibrant .program-header').scrollToFixed( {
+		    	$('.bg-vibrant .program-header').css('position','absolute').scrollToFixed( {
 			        marginTop: 0,
 			        limit: function() {
 			        	return $('.bg-vibrant').offset().top + $('.bg-vibrant').height() - $('.bg-vibrant .program-header').outerHeight();
