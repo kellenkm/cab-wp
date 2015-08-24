@@ -1162,7 +1162,7 @@ section.cover {
   /* line 4, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
   .section-page.program.bg-vibrant {
     background-color: #e95ba1; }
-    @media screen and (min-width: 64em) {
+    @media screen and (min-width: 30em) {
       /* line 7, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program.bg-vibrant .program-header {
         position: absolute;
