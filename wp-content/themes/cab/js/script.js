@@ -1,4 +1,4 @@
-var s;
+var s, offset;
 $(document).ready(function() {
 	// $('#sidebar-nav').sticky({topSpacing:16});
 	// $('#sidebar-nav').stickyMojo({footerID: '#phantom-footer', contentID: '#content-wrapper'});
@@ -21,13 +21,17 @@ $(document).ready(function() {
 		        s = skrollr.init({
 		            smoothScrolling: false
 		        });
+		        offset = 0;
         		$('.bg-vibrant .program-header').scrollToFixed( {
 			        marginTop: 0,
-			        limit: $('.bg-vibrant').offset().top + $('.bg-vibrant').height() - $('.bg-vibrant .program-header').outerHeight()
+			        limit: function() {
+			        	return $('.bg-vibrant').offset().top + $('.bg-vibrant').height() - $('.bg-vibrant .program-header').outerHeight() - offset
+			        }
 			    });
 		 
 		 
 		    } else {
+		    	offset = 10000;
 		    	if(s) {
 		    		s.destroy();
 		    	}
