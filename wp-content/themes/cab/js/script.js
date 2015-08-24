@@ -10,6 +10,11 @@ $(document).ready(function() {
 	//     updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
 	// });
 	$(window).load(function() {
+		$('.bg-vibrant .program-header').scrollToFixed( {
+	        marginTop: 0,
+	        limit: $('.bg-vibrant').offset().top + $('.bg-vibrant').height()
+	    });
+
 		function adjustWindow(){
 		     
 		    // Init Skrollr for 768 and up
