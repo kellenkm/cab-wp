@@ -241,31 +241,11 @@ usort($locations, 'keySort');
               </div>
             </header>
             
-            <?php foreach ($programming as $d): ?>
-			<?php foreach ($d as $p): ?>
-				<article class="program-article">
-	              <div class="program-article-content">
-	                <div class="program-article-time"><?php echo $p['event_time'] ?></div>
-	                <h1><?php echo $p['post_title'] ?></h1>
-	                <p><?php echo get_post_field('post_content', $p['ID']) ?></p>
-	                <?php if ($p['ticket_link']): ?>
-							<p><a class="get-tickets" href="<?php echo $p['ticket_link'] ?>" target="_BLANK">View Event Details</a></p>
-						<?php endif; ?>
-	              </div>
-	            </article>
-			<?php 
-
-			break;
-			endforeach; ?>
-		<?php endforeach; ?>
           </div>
         </div>
             <?php 
-            $index = 0;
             foreach ($programming as $d): ?>
-			<?php foreach ($d as $p): 
-				$index++; 
-				if($index == 1) continue; ?>
+			<?php foreach ($d as $p): ?>
 				<div class="container">
           <div class="inner">
             <article class="program-article align-right">
