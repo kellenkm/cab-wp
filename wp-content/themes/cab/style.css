@@ -884,7 +884,7 @@ footer.footer {
 
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_cover.scss */
 section.cover {
-  background-image: url(/assets/images/bg-cover.jpg);
+  background-image: url(images/bg-cover.jpg);
   background-color: #fff;
   background-size: cover;
   background-position: 50% top;
@@ -911,7 +911,7 @@ section.cover {
 
 /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_cover.scss */
 .spacer {
-  background-image: url(/assets/images/bg-cover.jpg);
+  background-image: url(images/bg-cover.jpg);
   background-color: #fff;
   background-size: cover;
   background-position: 50% -50%;
@@ -1342,7 +1342,7 @@ section.cover {
     /* line 22, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
     .section-page.locations .location-map .map {
       padding-bottom: 100%;
-      background: url(/assets/images/map-img.png);
+      background: url(images/map-img.png);
       background-size: cover; }
   /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
   .section-page.locations .location-directory {
