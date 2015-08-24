@@ -1166,7 +1166,7 @@ section.cover {
       /* line 7, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program.bg-vibrant .program-header {
         position: absolute;
-        top: 16px; }
+        padding-top: 16px; }
       /* line 11, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program.bg-vibrant .inner {
         padding-top: 0; } }
