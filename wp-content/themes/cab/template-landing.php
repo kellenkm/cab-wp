@@ -118,6 +118,31 @@ usort($locations, 'keySort');
 
 
 		<?php if (!empty($featured)): ?>
+    	<?php foreach($featured as $f): ?>
+    		<div class="modal fade" style="display:none;" id="modal-featured-<?php echo $f['ID'] ?>" tabindex="-1" role="dialog" aria-labelledby="modal-featured-<?php echo $f['ID'] ?>-label" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h4 class="modal-title" id="myModalLabel"><?php echo $f['post_title'] ?></h4>
+						</div>
+						<div class="modal-body">
+							<?php $bio_content = get_post_field('post_content', $f['ID']);
+							if ($bio_content): ?>
+								<p><?php echo $bio_content ?></p>
+							<?php else: ?>
+								<p>Bio coming soon!</p>
+							<?php endif; ?>
+						</div>
+						<div class="modal-footer">
+							<?php if ($f['their_url']): ?>
+								<p><a href="<?php echo $f['their_url'] ?>" target="_BLANK">Visit <?php echo $f['post_title'] ?>'s Site</a></p>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+    	<? } ?>
 		<section class="section-page marquee">
         <div class="container">
           <div class="inner">
@@ -125,30 +150,6 @@ usort($locations, 'keySort');
             <div class="big-names">
             	<?php foreach($featured as $f): ?>
 							<span><a data-toggle="modal" href="javascript:;" data-target="#modal-featured-<?php echo $f['ID'] ?>" id="featured-<?php echo $f['ID'] ?>"><?php echo $f['post_title'] ?></a></span>
-							<!-- Modal -->
-							<div class="modal fade" style="display:none;" id="modal-featured-<?php echo $f['ID'] ?>" tabindex="-1" role="dialog" aria-labelledby="modal-featured-<?php echo $f['ID'] ?>-label" aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="myModalLabel"><?php echo $f['post_title'] ?></h4>
-										</div>
-										<div class="modal-body">
-											<?php $bio_content = get_post_field('post_content', $f['ID']);
-											if ($bio_content): ?>
-												<p><?php echo $bio_content ?></p>
-											<?php else: ?>
-												<p>Bio coming soon!</p>
-											<?php endif; ?>
-										</div>
-										<div class="modal-footer">
-											<?php if ($f['their_url']): ?>
-												<p><a href="<?php echo $f['their_url'] ?>" target="_BLANK">Visit <?php echo $f['post_title'] ?>'s Site</a></p>
-											<?php endif; ?>
-										</div>
-									</div>
-								</div>
-							</div>
 						<?php endforeach; ?>
 					</div>
 		          </div>
