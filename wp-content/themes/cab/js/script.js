@@ -1,3 +1,4 @@
+var s;
 $(document).ready(function() {
 	// $('#sidebar-nav').sticky({topSpacing:16});
 	// $('#sidebar-nav').stickyMojo({footerID: '#phantom-footer', contentID: '#content-wrapper'});
@@ -17,7 +18,7 @@ $(document).ready(function() {
 		    if( $(window).width() >= 768) {
 		 
 		        // Init Skrollr
-		        var s = skrollr.init({
+		        s = skrollr.init({
 		            smoothScrolling: false
 		        });
         		$('.bg-vibrant .program-header').scrollToFixed( {
