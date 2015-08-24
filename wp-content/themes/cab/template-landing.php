@@ -142,7 +142,7 @@ usort($locations, 'keySort');
 					</div>
 				</div>
 			</div>
-    	<?php } ?>
+    	<?php endforeach; ?>
 		<section class="section-page marquee">
         <div class="container">
           <div class="inner">
