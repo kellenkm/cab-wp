@@ -653,25 +653,25 @@ h1,
 /* line 185, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/base/_type-grid.scss */
 h2,
 .beta {
-  font-size: 1.75rem;
-  line-height: 1.25; }
+  font-size: 2rem;
+  line-height: 1; }
   @media screen and (min-width: 90em) {
     /* line 185, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/base/_type-grid.scss */
     h2,
     .beta {
-      font-size: 1.75rem;
-      line-height: 1.25; } }
+      font-size: 2.625rem;
+      line-height: 1; } }
 
 /* line 190, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/base/_type-grid.scss */
 h3,
 .gamma {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.25; }
   @media screen and (min-width: 90em) {
     /* line 190, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/base/_type-grid.scss */
     h3,
     .gamma {
-      font-size: 1.5rem;
+      font-size: 1.875rem;
       line-height: 1.25; } }
 
 /* line 195, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/base/_type-grid.scss */
@@ -734,6 +734,7 @@ small,
 /* line 227, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/base/_type-grid.scss */
 p {
   font-weight: 300;
+  line-height: 1.25;
   margin-top: 0; }
 
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/base/_parallax.scss */
@@ -843,14 +844,19 @@ body {
 
 /* line 22, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
 .section-header {
+  text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.5rem; }
+  @media screen and (min-width: 30em) {
+    /* line 22, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
+    .section-header {
+      font-size: 2.645rem; } }
 
-/* line 28, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
+/* line 33, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
 footer.footer {
   background-color: #354872; }
-  /* line 31, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
+  /* line 36, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
   footer.footer .container {
     max-width: 68em;
     margin-left: auto;
@@ -861,7 +867,7 @@ footer.footer {
       clear: both;
       content: "";
       display: table; }
-  /* line 36, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
+  /* line 41, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
   footer.footer .inner {
     float: left;
     display: block;
@@ -872,13 +878,13 @@ footer.footer {
     footer.footer .inner:last-child {
       margin-right: 0; }
 
-/* line 42, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
+/* line 47, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/_global.scss */
 .align-right {
   float: right !important; }
 
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_cover.scss */
 section.cover {
-  background-image: url(images/bg-cover.jpg);
+  background-image: url(/assets/images/bg-cover.jpg);
   background-color: #fff;
   background-size: cover;
   background-position: 50% top;
@@ -905,7 +911,7 @@ section.cover {
 
 /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_cover.scss */
 .spacer {
-  background-image: url(images/bg-cover.jpg);
+  background-image: url(/assets/images/bg-cover.jpg);
   background-color: #fff;
   background-size: cover;
   background-position: 50% -50%;
@@ -926,6 +932,9 @@ section.cover {
 .section-page.marquee {
   background-color: #e95ba1; }
   /* line 4, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+  .section-page.marquee .section-header {
+    color: #ef88bb; }
+  /* line 8, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
   .section-page.marquee .container {
     max-width: 68em;
     margin-left: auto;
@@ -936,7 +945,7 @@ section.cover {
       clear: both;
       content: "";
       display: table; }
-  /* line 9, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+  /* line 13, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
   .section-page.marquee .inner {
     float: left;
     display: block;
@@ -946,17 +955,17 @@ section.cover {
     /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     .section-page.marquee .inner:last-child {
       margin-right: 0; }
-  /* line 14, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+  /* line 18, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
   .section-page.marquee h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: 1.25;
     margin-top: 2rem; }
     @media screen and (min-width: 90em) {
-      /* line 14, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+      /* line 18, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
       .section-page.marquee h1 {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
         line-height: 1.25; } }
-  /* line 19, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+  /* line 23, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
   .section-page.marquee .big-names {
     font-size: 2.125rem;
     line-height: 1.25;
@@ -964,20 +973,38 @@ section.cover {
     text-transform: uppercase;
     font-weight: 700; }
     @media screen and (min-width: 64em) {
-      /* line 19, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+      /* line 23, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
       .section-page.marquee .big-names {
         font-size: 3.5rem;
         line-height: 1; } }
     @media screen and (min-width: 90em) {
-      /* line 19, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+      /* line 23, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
       .section-page.marquee .big-names {
         font-size: 4.5rem;
         line-height: 1; } }
+    /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+    .section-page.marquee .big-names span {
+      display: inline-block; }
+      /* line 32, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+      .section-page.marquee .big-names span:nth-child(4n+1) {
+        color: white; }
+      /* line 36, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+      .section-page.marquee .big-names span:nth-child(4n+2) {
+        color: #354872; }
+      /* line 40, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+      .section-page.marquee .big-names span:nth-child(4n+3) {
+        color: #e0e32e; }
+      /* line 44, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
+      .section-page.marquee .big-names span:nth-child(4n+4) {
+        color: #3ac3f2; }
 
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
 .section-page.featured {
   background-color: #3ac3f2; }
   /* line 4, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+  .section-page.featured .section-header {
+    color: #6ad2f5; }
+  /* line 8, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
   .section-page.featured .container {
     max-width: 68em;
     margin-left: auto;
@@ -987,7 +1014,7 @@ section.cover {
       clear: both;
       content: "";
       display: table; }
-  /* line 8, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+  /* line 12, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
   .section-page.featured .inner {
     float: left;
     display: block;
@@ -998,7 +1025,7 @@ section.cover {
     .section-page.featured .inner:last-child {
       margin-right: 0; }
 
-/* line 14, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+/* line 18, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
 .featured-article {
   float: left;
   display: block;
@@ -1009,7 +1036,7 @@ section.cover {
   .featured-article:last-child {
     margin-right: 0; }
   @media screen and (min-width: 30em) {
-    /* line 14, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+    /* line 18, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
     .featured-article {
       float: left;
       display: block;
@@ -1018,10 +1045,10 @@ section.cover {
       /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
       .featured-article:last-child {
         margin-right: 0; }
-      /* line 20, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+      /* line 24, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
       .featured-article:nth-child(odd) {
         margin-right: 0; } }
-  /* line 25, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+  /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
   .featured-article-meta {
     float: left;
     display: block;
@@ -1031,7 +1058,7 @@ section.cover {
     .featured-article-meta:last-child {
       margin-right: 0; }
     @media screen and (min-width: 30em) {
-      /* line 25, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+      /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
       .featured-article-meta {
         float: left;
         display: block;
@@ -1040,52 +1067,52 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .featured-article-meta:last-child {
           margin-right: 0; } }
-    /* line 32, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+    /* line 36, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
     .featured-article-meta .date {
       text-transform: uppercase; }
-      /* line 35, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+      /* line 39, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
       .featured-article-meta .date-day {
         font-size: 2.125rem;
         line-height: 1.25;
         font-family: "refrigerator-deluxe", sans-serif;
         font-weight: 800; }
         @media screen and (min-width: 64em) {
-          /* line 35, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+          /* line 39, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
           .featured-article-meta .date-day {
             font-size: 3.5rem;
             line-height: 1; } }
         @media screen and (min-width: 90em) {
-          /* line 35, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+          /* line 39, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
           .featured-article-meta .date-day {
             font-size: 4.5rem;
             line-height: 1; } }
-      /* line 41, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+      /* line 45, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
       .featured-article-meta .date-month {
         font-size: 1.75rem;
         line-height: 1.25;
         font-family: "refrigerator-deluxe", sans-serif;
         font-weight: 700; }
         @media screen and (min-width: 90em) {
-          /* line 41, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+          /* line 45, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
           .featured-article-meta .date-month {
-            font-size: 1.75rem;
+            font-size: 1.875rem;
             line-height: 1.25; } }
-    /* line 49, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+    /* line 53, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
     .featured-article-meta .place-title {
       font-family: "almaq-refined", sans-serif;
       font-weight: normal; }
-    /* line 54, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+    /* line 58, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
     .featured-article-meta .place-time {
       font-size: 1.75rem;
       line-height: 1.25;
       font-family: "refrigerator-deluxe", sans-serif;
       font-weight: 700; }
       @media screen and (min-width: 90em) {
-        /* line 54, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+        /* line 58, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
         .featured-article-meta .place-time {
-          font-size: 1.75rem;
+          font-size: 1.875rem;
           line-height: 1.25; } }
-  /* line 62, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+  /* line 66, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
   .featured-article-content {
     float: left;
     display: block;
@@ -1095,7 +1122,7 @@ section.cover {
     .featured-article-content:last-child {
       margin-right: 0; }
     @media screen and (min-width: 30em) {
-      /* line 62, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+      /* line 66, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
       .featured-article-content {
         float: left;
         display: block;
@@ -1104,7 +1131,7 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .featured-article-content:last-child {
           margin-right: 0; } }
-    /* line 69, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+    /* line 73, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
     .featured-article-content h1 {
       font-size: 1.75rem;
       line-height: 1.25;
@@ -1112,20 +1139,20 @@ section.cover {
       font-weight: normal;
       padding-right: 2rem; }
       @media screen and (min-width: 90em) {
-        /* line 69, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+        /* line 73, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
         .featured-article-content h1 {
-          font-size: 1.75rem;
+          font-size: 1.875rem;
           line-height: 1.25; } }
 
-/* line 77, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+/* line 81, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
 .modal {
   font-family: "proxima-nova", sans-serif;
   text-transform: none;
   color: #333; }
-  /* line 81, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+  /* line 85, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
   .modal a {
     color: #477dca; }
-    /* line 83, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
+    /* line 87, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
     .modal a:hover {
       color: #2c5999; }
 
@@ -1136,6 +1163,9 @@ section.cover {
   .section-page.program.bg-vibrant {
     background-color: #e95ba1; }
   /* line 8, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+  .section-page.program .section-header {
+    color: #455e95; }
+  /* line 12, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
   .section-page.program .inner {
     float: left;
     display: block;
@@ -1145,7 +1175,7 @@ section.cover {
     .section-page.program .inner:last-child {
       margin-right: 0; }
     @media screen and (min-width: 64em) {
-      /* line 8, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+      /* line 12, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program .inner {
         float: left;
         display: block;
@@ -1155,7 +1185,7 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .section-page.program .inner:last-child {
           margin-right: 0; } }
-  /* line 17, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+  /* line 21, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
   .section-page.program .program-header {
     float: left;
     display: block;
@@ -1165,7 +1195,7 @@ section.cover {
     .section-page.program .program-header:last-child {
       margin-right: 0; }
     @media screen and (min-width: 30em) {
-      /* line 17, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+      /* line 21, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program .program-header {
         float: left;
         display: block;
@@ -1174,52 +1204,75 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .section-page.program .program-header:last-child {
           margin-right: 0; } }
-    /* line 24, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+    /* line 28, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
     .section-page.program .program-header .date {
       text-transform: uppercase; }
-      /* line 27, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+      /* line 31, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program .program-header .date-day {
         font-size: 2.125rem;
         line-height: 1.25;
         font-family: "refrigerator-deluxe", sans-serif;
         font-weight: 800; }
         @media screen and (min-width: 64em) {
-          /* line 27, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+          /* line 31, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
           .section-page.program .program-header .date-day {
             font-size: 3.5rem;
             line-height: 1; } }
         @media screen and (min-width: 90em) {
-          /* line 27, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+          /* line 31, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
           .section-page.program .program-header .date-day {
             font-size: 4.5rem;
             line-height: 1; } }
-      /* line 33, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+      /* line 37, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program .program-header .date-month {
-        font-size: 1.75rem;
-        line-height: 1.25;
+        font-size: 2rem;
+        line-height: 1;
         font-family: "refrigerator-deluxe", sans-serif;
         font-weight: 700; }
         @media screen and (min-width: 90em) {
-          /* line 33, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+          /* line 37, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
           .section-page.program .program-header .date-month {
-            font-size: 1.75rem;
-            line-height: 1.25; } }
-    /* line 41, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+            font-size: 2.625rem;
+            line-height: 1; } }
+    /* line 45, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
     .section-page.program .program-header .place-title {
-      font-family: "proxima-nova", sans-serif;
-      font-weight: normal; }
-    /* line 46, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
-    .section-page.program .program-header .place-time {
       font-size: 1.75rem;
       line-height: 1.25;
+      font-family: "almaq-refined", sans-serif;
+      font-weight: normal; }
+      @media screen and (min-width: 90em) {
+        /* line 45, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+        .section-page.program .program-header .place-title {
+          font-size: 1.875rem;
+          line-height: 1.25; } }
+    /* line 51, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+    .section-page.program .program-header .place-time {
+      font-size: 2rem;
+      line-height: 1;
       font-family: "refrigerator-deluxe", sans-serif;
       font-weight: 700; }
       @media screen and (min-width: 90em) {
-        /* line 46, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+        /* line 51, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
         .section-page.program .program-header .place-time {
-          font-size: 1.75rem;
-          line-height: 1.25; } }
-  /* line 54, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+          font-size: 2.625rem;
+          line-height: 1; } }
+    /* line 57, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+    .section-page.program .program-header .place-sub {
+      font-size: 2.125rem;
+      line-height: 1.25;
+      font-family: "refrigerator-deluxe", sans-serif;
+      text-transform: uppercase; }
+      @media screen and (min-width: 64em) {
+        /* line 57, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+        .section-page.program .program-header .place-sub {
+          font-size: 3.5rem;
+          line-height: 1; } }
+      @media screen and (min-width: 90em) {
+        /* line 57, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+        .section-page.program .program-header .place-sub {
+          font-size: 4.5rem;
+          line-height: 1; } }
+  /* line 65, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
   .section-page.program .program-article {
     float: left;
     display: block;
@@ -1229,7 +1282,7 @@ section.cover {
     .section-page.program .program-article:last-child {
       margin-right: 0; }
     @media screen and (min-width: 30em) {
-      /* line 54, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+      /* line 65, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
       .section-page.program .program-article {
         float: left;
         display: block;
@@ -1238,18 +1291,18 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .section-page.program .program-article:last-child {
           margin-right: 0; } }
-    /* line 61, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+    /* line 72, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
     .section-page.program .program-article h1 {
-      font-size: 1.75rem;
-      line-height: 1.25;
+      font-size: 2rem;
+      line-height: 1;
       font-family: "almaq-refined", sans-serif;
       font-weight: normal;
       padding-right: 2rem; }
       @media screen and (min-width: 90em) {
-        /* line 61, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
+        /* line 72, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_program.scss */
         .section-page.program .program-article h1 {
-          font-size: 1.75rem;
-          line-height: 1.25; } }
+          font-size: 2.625rem;
+          line-height: 1; } }
 
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
 .section-page.locations {
@@ -1263,6 +1316,10 @@ section.cover {
     content: "";
     display: table; }
   /* line 8, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+  .section-page.locations .section-header {
+    color: #edef88;
+    text-align: left; }
+  /* line 13, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
   .section-page.locations .location-map {
     float: left;
     display: block;
@@ -1273,7 +1330,7 @@ section.cover {
     .section-page.locations .location-map:last-child {
       margin-right: 0; }
     @media screen and (min-width: 64em) {
-      /* line 8, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+      /* line 13, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
       .section-page.locations .location-map {
         float: left;
         display: block;
@@ -1282,12 +1339,12 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .section-page.locations .location-map:last-child {
           margin-right: 0; } }
-    /* line 17, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+    /* line 22, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
     .section-page.locations .location-map .map {
       padding-bottom: 100%;
-      background: url(images/map-img.png);
+      background: url(/assets/images/map-img.png);
       background-size: cover; }
-  /* line 24, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+  /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
   .section-page.locations .location-directory {
     float: left;
     display: block;
@@ -1299,7 +1356,7 @@ section.cover {
     .section-page.locations .location-directory:last-child {
       margin-right: 0; }
     @media screen and (min-width: 64em) {
-      /* line 24, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+      /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
       .section-page.locations .location-directory {
         float: left;
         display: block;
@@ -1308,6 +1365,21 @@ section.cover {
         /* line 89, /Users/kellen/.rvm/gems/ruby-2.1.4/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
         .section-page.locations .location-directory:last-child {
           margin-right: 0; } }
-  /* line 34, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+  /* line 41, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+  .section-page.locations .location-list li {
+    margin-bottom: 1.5rem; }
+  /* line 45, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
   .section-page.locations .location-list a {
     color: #354872; }
+  /* line 48, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+  .section-page.locations .location-list h4 {
+    font-size: 2rem;
+    line-height: 1;
+    font-family: "almaq-refined", sans-serif;
+    font-weight: normal;
+    margin-bottom: .25rem; }
+    @media screen and (min-width: 90em) {
+      /* line 48, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_locations.scss */
+      .section-page.locations .location-list h4 {
+        font-size: 2.625rem;
+        line-height: 1; } }
