@@ -983,19 +983,19 @@ section.cover {
         font-size: 4.5rem;
         line-height: 1; } }
     /* line 29, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
-    .section-page.marquee .big-names span a {
+    .section-page.marquee .big-names span {
       display: inline-block; }
       /* line 32, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
-      .section-page.marquee .big-names span a:nth-child(4n+1) {
+      .section-page.marquee .big-names span:nth-child(4n+1) a {
         color: white; }
       /* line 36, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
-      .section-page.marquee .big-names span a:nth-child(4n+2) {
+      .section-page.marquee .big-names span:nth-child(4n+2) a {
         color: #354872; }
       /* line 40, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
-      .section-page.marquee .big-names span a:nth-child(4n+3) {
+      .section-page.marquee .big-names span:nth-child(4n+3) a {
         color: #e0e32e; }
       /* line 44, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_marquee.scss */
-      .section-page.marquee .big-names span a:nth-child(4n+4) {
+      .section-page.marquee .big-names span:nth-child(4n+4) a {
         color: #3ac3f2; }
 
 /* line 1, /Users/kellen/comicartsbrooklyn/source/assets/stylesheets/components/_featured.scss */
