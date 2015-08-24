@@ -36,6 +36,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="<? bloginfo('template_url'); ?>/js/skrollr.min.js"></script>
+<script src="<? bloginfo('template_url'); ?>/js/enquire.min.js"></script>
 <script src="<? bloginfo('template_url'); ?>/js/bootstrap/bootstrap.min.js"></script>
 <!-- <script src="<?php echo get_bloginfo('template_directory') ?>/js/mojotech-stickymojo-7d56a77/stickyMojo.js"></script>
 <script src="<?php echo get_bloginfo('template_directory') ?>/js/smooth-scroll-master/dist/js/bind-polyfill.js"></script>
