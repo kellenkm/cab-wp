@@ -40,7 +40,7 @@ $(document).ready(function() {
 			        }
 			    });
 		    } else 
-		    	 $('.bg-vibrant .program-header').trigger('detach.ScrollToFixed');
+		    	 $('.bg-vibrant .program-header').trigger('detach.ScrollToFixed').removeAttr('style');
 		}
 		function initAdjustWindow() {
 		    return {
