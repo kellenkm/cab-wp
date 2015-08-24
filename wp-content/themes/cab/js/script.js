@@ -21,7 +21,6 @@ $(document).ready(function() {
 		        s = skrollr.init({
 		            smoothScrolling: false
 		        });
-		        offset = 0;
         		$('.bg-vibrant .program-header').scrollToFixed( {
 			        marginTop: 0,
 			        limit: function() {
@@ -36,7 +35,14 @@ $(document).ready(function() {
 		    		s.destroy();
 		    	}
 		    }
+
 		 
+		}
+		function adjustWindow2() {
+		    if( $(window).width() >= 480)
+		    	offset = 0;
+		    else 
+		    	offset = -10000;
 		}
 		function initAdjustWindow() {
 		    return {
@@ -48,7 +54,18 @@ $(document).ready(function() {
 		        }
 		    };
 		}
+		function initAdjustWindow2() {
+		    return {
+		        match : function() {
+		            adjustWindow2();
+		        },
+		        unmatch : function() {
+		            adjustWindow2();
+		        }
+		    };
+		}
 		enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
+		enquire.register("screen and (min-width : 480px)", initAdjustWindow2(), false);
 	});
 	$('#show-all-exhibitors').click(function() {
 		// $(this).toggle();
