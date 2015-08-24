@@ -33,14 +33,14 @@ $(document).ready(function() {
 		}
 		function adjustWindow2() {
 		    if( $(window).width() >= 480) {
-		    	$('.bg-vibrant .program-header').css('position','absolute').scrollToFixed( {
+		    	$('.bg-vibrant .program-header').scrollToFixed( {
 			        marginTop: 0,
 			        limit: function() {
 			        	return $('.bg-vibrant').offset().top + $('.bg-vibrant').height() - $('.bg-vibrant .program-header').outerHeight();
 			        }
 			    });
 		    } else 
-		    	 $('.bg-vibrant .program-header').trigger('detach.ScrollToFixed').css('position','relative');
+		    	 $('.bg-vibrant .program-header').trigger('detach.ScrollToFixed');
 		}
 		function initAdjustWindow() {
 		    return {
