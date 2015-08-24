@@ -26,6 +26,10 @@ $(document).ready(function() {
 			    });
 		 
 		 
+		    } else {
+		    	if(s) {
+		    		s.destroy();
+		    	}
 		    }
 		 
 		}
