@@ -13,7 +13,7 @@ $(document).ready(function() {
 		function adjustWindow(){
 		     
 		    // Init Skrollr for 768 and up
-		    if( $window.width() >= 768) {
+		    if( $(window).width() >= 768) {
 		 
 		        // Init Skrollr
 		        var s = skrollr.init({
