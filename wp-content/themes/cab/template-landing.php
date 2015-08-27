@@ -270,6 +270,7 @@ usort($locations, 'keySort');
         <aside class="location-map">
           <div class="map"></div>
         </aside>
+        <h2 class="section-header">Map</h2>
         <div class="location-directory">
           <ul class="location-list">
           	<?php $count = 1 ?>
